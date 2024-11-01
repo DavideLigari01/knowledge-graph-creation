@@ -1,0 +1,20 @@
+{
+    "clean_data": {
+        "input": "../data/raw/export_ecube15_sn_1.csv",
+        "output": "../data/raw/data_cleaned.csv"
+    },
+    "split_dataset": {
+        "dataset_path": "../data/raw/data_cleaned.csv",
+        "n_chunks": 3,
+        "output_dir": "../data/chunk/"
+    },
+    "mapping": {
+        "rml_path": "../data/mapper/",
+        "output_path": "../data/rdf/",
+        "mapper_path": "rmlmapper.jar"
+    },
+    "upload_to_graphDB": {
+        "graphDB_url": "http://localhost:7200/",
+        "graphDB_repo": "thesis"
+    }
+}
